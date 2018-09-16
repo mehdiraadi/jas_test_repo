@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="657adec6-2707-4739-9ee8-4b2ee477dc0c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1 getBank" searchProperties="true" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="657adec6-2707-4739-9ee8-4b2ee477dc0cfileName">TestCase-1-getBank</con:setting></con:settings><con:testStep type="request" name="SOAP Request with blz" id="0e2665c5-1890-48b1-8f6c-093197343138"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BLZServiceSOAP11Binding</con:interface><con:operation>getBank</con:operation><con:request name="SOAP Request with blz" id="8c567ea1-3454-49d7-8fc5-b09d6c798df4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <blz:getBank>
+         <blz:blz>55010424</blz:blz>
+      </blz:getBank>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="b08f07b6-fa17-40c5-8ea7-a8739073077e"/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

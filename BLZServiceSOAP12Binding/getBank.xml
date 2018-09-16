@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="bec139eb-cae1-470c-999e-7d5e4bd3c80e" isOneWay="false" action="" name="getBank" bindingOperationName="getBank" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="bec139eb-cae1-470c-999e-7d5e4bd3c80efileName">getBank</con:setting></con:settings><con:call id="94498553-db26-49aa-ac3c-e5e10cd1cd20" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:blz="http://thomas-bayer.com/blz/">
+   <soap:Header/>
+   <soap:Body>
+      <blz:getBank>
+         <blz:blz>?</blz:blz>
+      </blz:getBank>
+   </soap:Body>
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://thomas-bayer.com/blz/BLZServicePortType/getBankRequest"/></con:call></con:operation>
